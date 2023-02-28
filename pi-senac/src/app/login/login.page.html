@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Entrar</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="">
+
+  <ion-item lines="full">
+    <ion-label position="floating" color="dark">Email</ion-label>
+    <ion-input type="text" #email required></ion-input>
+  </ion-item>
+
+  <ion-item lines="full">
+    <ion-label position="floating" color="dark">Password</ion-label>
+    <ion-input type="password" #password required></ion-input>
+  </ion-item>
+
+
+  <ion-row>
+    <ion-col>
+      <button id="btn" type="submit" (click)="logIn(email, password)" expand="block"
+        >Login</button>
+    </ion-col>
+  </ion-row>
+
+  <ion-row>
+    <ion-col>
+      <ion-button
+        type="submit"
+        color="danger"
+        (click)="authService.GoogleAuth()"
+        expand="block"
+        id="btn1"
+      >
+        Google
+      </ion-button>
+    </ion-col>
+  </ion-row>
+
+  <p id="redsenha" [routerLink]="['/password-reset']">Esqueceu sua senha?</p>
+
+
+</ion-content>

@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+// Botao Adicionar e Vendas
+#button_list {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 15px;
+    margin-right: 15px;
+}
+
+#itens p{
+    color: rgb(143, 143, 143);
+}
+
+.corpo {
+    padding-top: 20px;
+}
+
+#segment{
+    color: #FFFFFF;
+}
+
+/*BARRA DE FERRAMENTAS*/
+ion-toolbar{
+    --ion-toolbar-background: #151515; /*cor do background*/
+    --ion-text-color: #ffffff; /*cor do texto*/
+    --ion-toolbar-color:#ffffff; /*cor do titulo*/
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    
+}
+
+/*CONTEUDO OU CORPO*/
+ion-content{
+    --ion-background-color:#151515;
+    --ion-text-color: #FFFFFF;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+}
+
+/*BORDA DOS ITENS*/
+ion-item{
+    --ion-item-border-color:#ffffff; /*cor da borda de um item*/
+}
+
+/*HEADER*/
+ion-header{
+    --ion-toolbar-border-color:#ffffff; /*linha abaixo do header*/
+}
+
+// IOS
+/*BARRA DE PESQUISAS*/
+.sc-ion-searchbar-ios-h {
+    background: #151515;
+    --clear-button-color:#ffffff;
+    --color: #ffffff;
+    --icon-color:#ffffff;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 60px;
+}
+
+.sc-ion-searchbar-ios-h {
+    --background: #ffffff;
+    --border-radius: 25px;
+    --cancel-button-color: var(--ion-color-step-900, #151515);
+    --color: #000000;
+    --icon-color: #000000;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background: #151515;
+}
+
+
+// Android
+/*BARRA DE PESQUISAS*/
+.sc-ion-searchbar-md-h {
+    background: #151515;
+    --clear-button-color:#ffffff;
+    --color: #ffffff;
+    --icon-color:#ffffff;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 60px;
+}
+
+.sc-ion-searchbar-md-h {
+    --background: #ffffff;
+    --border-radius: 25px;
+    --cancel-button-color: var(--ion-color-step-900, #151515);
+    --color: #000000;
+    --icon-color: #000000;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background: #151515;
+}
+
+#photo{
+    margin-left: 12px;
+    margin-top: 25px;
+    cursor: pointer;  
+    
+    
+}
+
+#photo1{
+    margin-left: 5px;
+    margin-top: -3px;
+    cursor: pointer; 
+    
+    width: 60px;
+    height: 60px;
+
+    border-radius: 50%;
+    
+    
+}
+
+
+#photoPerfil{
+    border-radius: 50%;
+}
+#nome{
+
+    width: 140px;
+    margin-left: 90px;
+    margin-top: 40px;
+
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+
+    text-transform: capitalize;
+    color: #FFFFFF;
+
+}
+.profile{
+    margin-bottom: 25px;
+    background-color: #5860FF;
+    height: 95px;
+}
+
+

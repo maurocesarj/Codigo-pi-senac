@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto+Condensed:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+
+header{
+    border: none;
+    margin: 0;
+}
+#bola{
+    margin: 0;
+    background: #5860FF;
+    width: 100vw;
+    height: 30px;
+}
+ 
+.title {
+    margin-top: 200px;
+    margin-bottom: 30px;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.title h2{
+    font-size: 35px;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-transform: uppercase;
+}
+
+.title p {
+    margin-top: 0 !important;
+    letter-spacing: .5px;
+}
+
+#btn{
+    color: black;
+    background-color: #fff;
+    width: 220px;
+    font-family: 'Poppins', sans-serif;
+    height: 35px;
+    border-radius: 8px;
+
+}
+
+#btn:hover{
+    background-color: #5860FF;
+    color: #e4dede;
+    width: 230px;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+
+#btn1{
+    color: black;
+    background-color: #fff;
+    width: 220px;
+    font-family: 'Poppins', sans-serif;
+    height: 35px;
+    border-radius: 8px;
+
+}
+
+#btn1:hover{
+    background-color: #5860FF;
+    color: #e4dede;
+    width: 230px;
+    font-family: 'Poppins', sans-serif;
+
+}

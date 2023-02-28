@@ -1,0 +1,20 @@
+<ion-header color="primary" >
+  <div id="bola"></div>
+</ion-header>
+
+
+
+<ion-content class="ion-padding ion-text-center" color=" --ion-color-success-contrast: #000000;">
+
+  <div class="title">
+      <h2>Conecte-se</h2>
+      <p>TENHA O CONTROLE</p>
+  </div>
+
+  <div class="ion-margin-top">
+
+      <button [routerLink]="['/registration']" id="btn" class="ion-margin-top" (click)="register()">CRIAR CONTA</button>
+      <button [routerLink]="['/login']" id="btn1" class="ion-margin-top" (click)="login()" >ENTRAR</button>
+
+  </div>
+</ion-content>

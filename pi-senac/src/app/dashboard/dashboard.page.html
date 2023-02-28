@@ -1,0 +1,23 @@
+
+<ion-content>
+  
+  <div class="wrapper">
+    <ion-icon name="chevron-back-outline" class="back" routerLink="/carrinho/"></ion-icon>
+    <h1>Quase lá</h1>
+    <p>Pague com o Qrcode abaixo, lembre-se de<br> conferir o valor digitado antes de efetuar o<br> pagamento.</p>
+
+    <div class="whiteBox">
+      <img src="assets/imagens/qrcode.jpg" id="qrcode">
+    <ion-item *ngFor="let arrayPessoa of arrayPessoa">
+      <p>Peça para seu cliente ler o qrcode<br> abaixo e conferir o valor de <span class="blue">{{ arrayPessoa.preco * arrayPessoa.quantidade | currency}}</span></p>
+    </ion-item>
+
+      <img src="assets/imagens/nuvemAki.png" id="logo">
+     
+    </div>
+    <div class="buttonDiv">
+      <button id="edit"> <ion-icon name="create-outline" id="iconEdit"></ion-icon></button>
+    </div>
+  </div>
+
+</ion-content>
