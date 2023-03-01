@@ -18,20 +18,22 @@
     color: black;
     font-weight: bold;
 
-    padding-top: 80px;
-    padding-left: 50px;
+    padding-top: 60px;
+    padding-left: 45px;
 
     font-size: 35px;
     font-family: 'Roboto Condensed', sans-serif;
+
+    margin-bottom: 10px;
 }
 
 .wrapper p{
     font-family: 'Roboto Condensed', sans-serif;
-    font-size: 13px;
+    font-size: 14px;
     font-weight: lighter;
 
     margin-top: 1px;
-    padding-left: 50px;
+    padding-left: 45px;
 }
 
 .whiteBox{
@@ -39,8 +41,8 @@
     background-color: rgb(255, 255, 255);
 
     margin-top: 20px;
-    width: 240px;
-    height: 350px;
+    width: 260px;
+    height: 330px;
 
     border-radius: 5%;
     
@@ -55,17 +57,19 @@
     height: 195px;
     width: 195px;
 
-    margin-bottom: 15px;
+    margin-bottom: 0px;
 }
 
 .whiteBox p{
 
     margin-left: -47px;
+
+    margin-top: 5px;
     font-family: 'Roboto Condensed', sans-serif;
-    font-size: 13px;
+    font-size: 15px;
     font-weight: lighter;
 
-    margin-bottom: 15px;
+    margin-bottom: 8px;
 }
 .blue{
     color: #5860FF;
@@ -73,10 +77,10 @@
 }
 
 #logo{
-    height: 60px;
-    width: 60px;
+    height: 40px;
+    width: 40px;
 
-    margin-bottom: 10px;
+    margin-bottom: 2px;
 }
 
 .buttonDiv{

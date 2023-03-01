@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
 
 // Botao Adicionar e Vendas
 #button_list {
@@ -21,87 +21,28 @@
     color: #FFFFFF;
 }
 
+
 /*BARRA DE FERRAMENTAS*/
 ion-toolbar{
     --ion-toolbar-background: #151515; /*cor do background*/
     --ion-text-color: #ffffff; /*cor do texto*/
     --ion-toolbar-color:#ffffff; /*cor do titulo*/
     font-family: 'Inter', sans-serif;
-    font-size: 15px;
     
 }
 
 /*CONTEUDO OU CORPO*/
 ion-content{
-    --ion-background-color:#151515;
-    --ion-text-color: #FFFFFF;
+    --ion-background-color:#FFFFFF;
+    --ion-text-color: #070707;
     font-family: 'Inter', sans-serif;
     font-size: 15px;
-}
 
-/*BORDA DOS ITENS*/
-ion-item{
-    --ion-item-border-color:#ffffff; /*cor da borda de um item*/
+    border: none;
 }
-
 /*HEADER*/
 ion-header{
     --ion-toolbar-border-color:#ffffff; /*linha abaixo do header*/
-}
-
-// IOS
-/*BARRA DE PESQUISAS*/
-.sc-ion-searchbar-ios-h {
-    background: #151515;
-    --clear-button-color:#ffffff;
-    --color: #ffffff;
-    --icon-color:#ffffff;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    height: 60px;
-}
-
-.sc-ion-searchbar-ios-h {
-    --background: #ffffff;
-    --border-radius: 25px;
-    --cancel-button-color: var(--ion-color-step-900, #151515);
-    --color: #000000;
-    --icon-color: #000000;
-    padding-left: 5px;
-    padding-right: 5px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    background: #151515;
-}
-
-
-// Android
-/*BARRA DE PESQUISAS*/
-.sc-ion-searchbar-md-h {
-    background: #151515;
-    --clear-button-color:#ffffff;
-    --color: #ffffff;
-    --icon-color:#ffffff;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    height: 60px;
-}
-
-.sc-ion-searchbar-md-h {
-    --background: #ffffff;
-    --border-radius: 25px;
-    --cancel-button-color: var(--ion-color-step-900, #151515);
-    --color: #000000;
-    --icon-color: #000000;
-    padding-left: 5px;
-    padding-right: 5px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    background: #151515;
 }
 
 #photo{
@@ -113,39 +54,97 @@ ion-header{
 }
 
 #photo1{
-    margin-left: 5px;
-    margin-top: -3px;
+    background-color: red;
+
+    margin-left: 11px;
+    margin-top: 35px;
     cursor: pointer; 
     
     width: 60px;
     height: 60px;
 
-    border-radius: 50%;
-    
-    
+    border-radius: 50%;  
+  
 }
-
 
 #photoPerfil{
     border-radius: 50%;
 }
 #nome{
 
-    width: 140px;
-    margin-left: 90px;
-    margin-top: 40px;
+    position: relative;
+    width: 190px;
 
-    font-size: 20px;
-    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    font-family: 'Roboto Condensed', sans-serif;
 
     text-transform: capitalize;
-    color: #FFFFFF;
+    color: #070707;
+
+    top: 107px;
+    left: 30px;
 
 }
 .profile{
-    margin-bottom: 25px;
-    background-color: #5860FF;
-    height: 95px;
+    background-color: #F5F7F9;
+    height: 180px;
+    margin-bottom: 15px;
+}
+
+.itens{
+    color: red;
+}
+
+.opmenu{
+    background-color: #ffffff;
+    border: none;
+
+    color: #070707;
+    font-size: 17px;
+
+    font-family: 'Roboto Condensed', sans-serif;
+    margin-bottom: 15px;
+
+    width: 450px;
+}
+
+.icon-icon{
+    width: 25px;
+    height: 25px;
+
+    margin-left: 8px;
+    margin-right: 5px;
+
+    position: relative;
+    top: 3px;
 }
 
 
+#estoque{
+    position: relative;
+    right: 178px;
+}
+
+#venda{
+    position: relative;
+    right: 185px;
+}
+
+#historicoEntrada{
+    position: relative;
+    right: 147px;
+}
+
+#historicoEntrada ion-icon{
+    margin-right: 8px;
+}
+
+#historicoSaida{
+    position: relative;
+    right: 154px;
+}
+
+#sair{
+    position: relative;
+    right: 191px;
+}
