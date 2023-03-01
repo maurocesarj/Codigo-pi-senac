@@ -6,6 +6,9 @@ import { Pessoa } from 'src/app/models/pessoa.model'
 import { Guid } from 'guid-typescript';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 
+import { ActivatedRoute } from '@angular/router';
+
+
 @Component({
   selector: 'app-dashboard',
   templateUrl: './dashboard.page.html',
@@ -29,7 +32,7 @@ export class DashboardPage implements OnInit {
 
       this.arrayPessoa = this.objContatos.getItems()
      
-      this.pessoa = {id: Guid.createEmpty(), marca: "", nome: "", cor: "", tamanho: "", preco:"", quantidade:""}
+      this.pessoa = {id: Guid.createEmpty(), marca: "", nome: "", cor: "", tamanho: "", preco:"", quantidade:"",}
    
       this.pessoaForm = this.FormBuilder.group
       ({
@@ -50,5 +53,15 @@ export class DashboardPage implements OnInit {
         this.pessoaService.inserir(this.pessoaForm.value)
       }
     }
- 
+
+// Calculo total da compra
+
+    Total: Number
+
+    calcularTotal(item:Pessoa) {
+      const valor1 = parseFloat(item.preco)
+      const valor2 = parseFloat(item.quantidade)
+   
+      this.Total = valor1 * valor2
     }
+  }

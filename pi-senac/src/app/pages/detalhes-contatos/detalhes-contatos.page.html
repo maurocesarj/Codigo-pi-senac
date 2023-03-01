@@ -34,7 +34,6 @@
     <ion-item *ngIf="!modoDeEdicao">{{pessoa1.nome}}</ion-item>
     <ion-item *ngIf="!modoDeEdicao">{{pessoa1.cor}}</ion-item>
     <ion-item *ngIf="!modoDeEdicao">{{pessoa1.tamanho}}</ion-item>
-    <ion-item *ngIf="!modoDeEdicao">{{pessoa1.tipo}}</ion-item> 
     <ion-item *ngIf="!modoDeEdicao">{{pessoa1.preco}}</ion-item> 
     <ion-item *ngIf="!modoDeEdicao">{{pessoa1.quantidade}}</ion-item> 
   </div>
@@ -63,11 +62,6 @@
       <ion-input [(ngModel)]="pessoa1.tamanho" name="tamanho"  formControlName="tamanho"></ion-input> 
     </ion-item>
     
-    <ion-item>
-      <ion-label position="floating">Tipo:</ion-label>
-      <ion-input [(ngModel)]="pessoa1.tipo" name="tipo"  formControlName="tipo"></ion-input> 
-    </ion-item>
-
     <ion-item>
       <ion-label position="floating">Preço:</ion-label>
       <ion-input [(ngModel)]="pessoa1.preco" name="preco"  formControlName="preco"></ion-input> 

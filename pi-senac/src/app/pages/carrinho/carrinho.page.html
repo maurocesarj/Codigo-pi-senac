@@ -6,36 +6,41 @@
 </ion-header>
 
 <ion-content *ngFor="let carrinho of arrayPessoa">
+
+  <!-- Checkbox para selecionar a quantidadede produtos -->
+  <ion-checkbox id="check" (click)="calcularTotal(carrinho)"></ion-checkbox>
+
   <ion-card>
+
     <ion-card-header>
-      <ion-card-title id="prod_name">{{carrinho.nome}}</ion-card-title>
+      <ion-card-title>{{carrinho.nome}}</ion-card-title>
     </ion-card-header>
+
       <img alt="Silhouette of mountains" id="prod_icon" src="https://ionicframework.com/docs/img/demos/card-media.png" width="200px" height="120px"/>
-    <ion-card-content id="descricao">
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia rerum ex corporis tempore explicabo? 
-Consequuntur iste eaque ratione temporibus eos error porro, omnis dicta atque repellendus quos eius maiores praesentium?
+
+    <ion-card-content>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia rerum ex corporis tempore explicabo? 
+    Consequuntur iste eaque ratione temporibus eos error porro, omnis dicta atque repellendus quos eius maiores praesentium?
     </ion-card-content>
   </ion-card>
 
 
     <ion-item>
-        <ion-button fill="outline"  (click)="addItem(carrinho)" slot="start">
+        <ion-button fill="outline"  (click)="addItem(carrinho)">
           +
         </ion-button> 
 
-        <ion-label slot="start" id="qtd">{{ carrinho.quantidade }}</ion-label>
+        <ion-label>{{ carrinho.quantidade }}</ion-label>
 
-        <ion-button fill="outline" (click)="removeItem(carrinho)" slot="end">
+        <ion-button fill="outline" (click)="removeItem(carrinho)">
           -
         </ion-button>    
     </ion-item>
-
-
 </ion-content>
 
 <ion-footer>
-  <ion-item *ngFor="let carrinho of arrayPessoa">
-    <ion-label>R{{carrinho.quantidade * carrinho.preco | currency}}</ion-label>
+  <ion-item>
+    <p>SUB-TOTAL: {{ Total | currency}}</p>
     <ion-button routerLink="/dashboard/">CONTINUAR</ion-button>
   </ion-item>
 </ion-footer>

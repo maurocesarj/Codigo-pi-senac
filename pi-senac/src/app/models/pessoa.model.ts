@@ -9,4 +9,6 @@ export interface Pessoa {
     tamanho: string
     preco: any
     quantidade: any
+
+    
 }

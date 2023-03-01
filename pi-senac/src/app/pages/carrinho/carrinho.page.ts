@@ -6,6 +6,7 @@ import { Guid } from 'guid-typescript';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 
 
+
 @Component({
   selector: 'app-carrinho',
   templateUrl: './carrinho.page.html',
@@ -17,12 +18,13 @@ export class CarrinhoPage implements OnInit {
   public pessoaForm: FormGroup
   private arrayPessoa: Pessoa[] = []
   public dadosContatos : any
+  resultTotal:Number
 
 
   constructor(
     private objContatos : DadosContatosService,
     private FormBuilder : FormBuilder,
-    private pessoaService : DadosContatosService) {
+    private pessoaService : DadosContatosService,) {
     this.dadosContatos = objContatos.enviarContatos()
    }
 
@@ -52,6 +54,10 @@ export class CarrinhoPage implements OnInit {
      }
    }
 
+  //  Carrinho
+
+  Total: Number;
+
    addItem(item:Pessoa) {
     item.quantidade++;
     this.objContatos.addItem(item)
@@ -65,4 +71,11 @@ export class CarrinhoPage implements OnInit {
     this.objContatos.removeItem(item)
    }
 
-}
+  calcularTotal(item:Pessoa) {
+   const valor1 = parseFloat(item.preco)
+   const valor2 = parseFloat(item.quantidade)
+
+   this.Total = valor1 * valor2
+  }
+
+  }

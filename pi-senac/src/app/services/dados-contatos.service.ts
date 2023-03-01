@@ -80,8 +80,8 @@ export class DadosContatosService {
 
   getTotal() {
     return this.carrinho.reduce((total, carrinho) => total + carrinho.quantidade * carrinho.preco,0);
- 
-
   }
+
+
   
 }

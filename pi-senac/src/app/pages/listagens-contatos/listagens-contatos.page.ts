@@ -44,6 +44,7 @@ export class ListagensContatosPage implements OnInit {
       tamanho: [this.pessoa.tamanho, Validators.required],
       preco: [this.pessoa.preco, Validators.required],
       quantidade: [this.pessoa.quantidade, Validators.required],
+
     })
     
     this.pessoaService.listarTodos().then(arrayPessoa => {this.arrayPessoa = arrayPessoa})

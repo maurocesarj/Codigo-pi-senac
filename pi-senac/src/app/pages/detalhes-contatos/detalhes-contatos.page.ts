@@ -81,6 +81,7 @@ export class DetalhesContatosPage implements OnInit {
       tamanho: [this.pessoa1.tamanho, Validators.required],
       preco: [this.pessoa1.preco, Validators.required],
       quantidade: [this.pessoa1.quantidade, Validators.required],
+
     })
 
     // captar ID
