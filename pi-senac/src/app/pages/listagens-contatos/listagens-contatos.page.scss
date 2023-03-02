@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap');
 
 // Botao Adicionar e Vendas
 #button_list {
@@ -48,17 +49,15 @@ ion-header{
 #photo{
     margin-left: 12px;
     margin-top: 25px;
-    cursor: pointer;  
     
     
 }
 
 #photo1{
-    background-color: red;
+    background-color: #979393;
 
     margin-left: 11px;
     margin-top: 35px;
-    cursor: pointer; 
     
     width: 60px;
     height: 60px;
@@ -117,7 +116,6 @@ ion-header{
 
     position: relative;
     top: 3px;
-    
 }
 
 
@@ -150,7 +148,115 @@ ion-header{
     right: 191px;
 }
 
-#sair span{
+#barrinha{
+    color: rgba(0, 0, 0, 0.705);
+    background-color: rgb(255, 255, 255);
+
     position: relative;
-    bottom: 2px;
+    top: 60px;
+    left: 10px;
+
+    font-weight: bold;
+    font-size: 150pt;
+    margin: 0;
+}
+
+#whitediv{
+    height: 60px;
+    width: 100%;
+
+    position: relative;
+    bottom: 60px;
+    background-color: #d41818;
+}
+
+#barrinha1{
+    background-color: rgb(255, 255, 255);
+}
+.profileHome{
+
+    position: relative;
+    left: 230px;
+
+
+    top: 6px;
+    width: 55px;
+    height: 55px;
+
+    border-radius: 50%;
+
+    background-color: #979393;
+
+}
+#photoPerfilhome{
+    border-radius: 50%;
+}
+
+#nomePagina{
+    font-size: 25pt;
+    font-family: 'Tilt Warp', cursive;
+
+    position: relative;
+    left: 27px;
+    bottom: 10px;
+}
+
+#bntEstoque{
+    position: relative;
+    background-color: #5860FF;
+    color: #FFFFFF;
+    
+    font-size: 10pt;
+    height: 60px;
+    width: 120px;
+
+    left: 30px;
+    border-radius: 20px;
+
+    box-shadow: 0px 3px 5px rgba(0,0,0,0.3);
+}
+
+#bntCarrinho{
+    position: relative;
+    background-color: #E7E7E9;
+    color: #7C7171;
+    
+    font-size: 10pt;
+    height: 60px;
+    width: 120px;
+
+    left: 45px;
+    border-radius: 20px;
+
+    box-shadow: 0px 3px 5px rgba(0,0,0,0.3);
+}
+
+#list{
+    position: relative;
+
+    top: 10px;
+    border: none;
+}
+#imagemPro{
+    border-radius: 10px;
+}
+
+#add{
+    height: 25px;
+    width: 25px;
+
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    bottom: 65px;
+    right: 75px;
+
+    font-size: 15pt;
+    color: #070707;
+
+    border-radius: 50%;
+    box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+}
+
+#itema{
+    border: none;
 }
