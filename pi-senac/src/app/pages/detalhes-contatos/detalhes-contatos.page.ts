@@ -3,6 +3,7 @@ import { ActivatedRoute } from '@angular/router';
 import { DadosContatosService } from 'src/app/services/dados-contatos.service';
 import { AlertController } from '@ionic/angular';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 import { Guid } from 'guid-typescript'
 import { Pessoa } from 'src/app/models/pessoa.model';
 import { Storage } from '@ionic/storage-angular';
@@ -33,7 +34,8 @@ export class DetalhesContatosPage implements OnInit {
     private route : ActivatedRoute, 
     private alertController: AlertController,
     private formularioBuilder : FormBuilder,
-    private pessoaService: DadosContatosService) { }
+    private pessoaService: DadosContatosService,
+    private router: Router) { }
 
     async presentAlert() {
       const alert = await this.alertController.create({
@@ -135,6 +137,12 @@ export class DetalhesContatosPage implements OnInit {
     if (this.pessoaForm.valid){
       this.pessoaService.inserir(this.pessoaForm.value)
     }
+  }
+
+  recarregarPagina() {
+    this.router.navigateByUrl('/MinhaPagina', { skipLocationChange: true }).then(() => {
+      this.router.navigate([decodeURIComponent(this.router.url)]);
+    });
   }
 
 }

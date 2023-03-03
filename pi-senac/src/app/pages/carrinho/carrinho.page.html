@@ -8,8 +8,8 @@
 <ion-content *ngFor="let carrinho of arrayPessoa">
 
   <!-- Checkbox para selecionar a quantidadede produtos -->
-  <ion-checkbox id="check" (click)="calcularTotal(carrinho)"></ion-checkbox>
-
+  <ion-checkbox id="check" [(ngModel)]="isChecked" value="foo" (click)="calcularTotal(carrinho)"></ion-checkbox>
+  
   <ion-card>
 
     <ion-card-header>

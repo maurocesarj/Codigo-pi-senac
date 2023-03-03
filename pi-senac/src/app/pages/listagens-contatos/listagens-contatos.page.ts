@@ -5,6 +5,7 @@ import { Guid } from 'guid-typescript';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { AuthenticationService } from 'src/app/shared/authentication-service';
 import { User } from 'src/app/shared/user';
+import { Router } from '@angular/router';
 
 import { GoogleAuthProvider, ProviderId} from 'firebase/auth';
 
@@ -28,7 +29,8 @@ export class ListagensContatosPage implements OnInit {
     private objContatos : DadosContatosService,
     private FormBuilder : FormBuilder,
     private pessoaService : DadosContatosService,
-    private googleService : AuthenticationService) {
+    private googleService : AuthenticationService,
+    private router: Router) {
     this.dadosContatos = objContatos.enviarContatos()
    }
 
@@ -63,5 +65,11 @@ export class ListagensContatosPage implements OnInit {
        this.pessoaService.inserir(this.pessoaForm.value)
      }
    }
+
+   recarregarPagina() {
+    this.router.navigateByUrl('/MinhaPagina', { skipLocationChange: true }).then(() => {
+      this.router.navigate([decodeURIComponent(this.router.url)]);
+    });
+  }
 
 }

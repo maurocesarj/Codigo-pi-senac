@@ -71,11 +71,23 @@ export class CarrinhoPage implements OnInit {
     this.objContatos.removeItem(item)
    }
 
+  isChecked: boolean = false;
   calcularTotal(item:Pessoa) {
-   const valor1 = parseFloat(item.preco)
-   const valor2 = parseFloat(item.quantidade)
+    if (this.isChecked == false){
+      console.log("True")
+      const valor1 = parseFloat(item.preco)
+      const valor2 = parseFloat(item.quantidade)
 
-   this.Total = valor1 * valor2
+      this.Total = valor1 * valor2
+
+    } else{
+      console.log("False")
+      const valor1 = parseFloat(item.preco)
+      const valor2 = parseFloat(item.quantidade)
+
+    this.Total = 0
+
+    }
   }
 
   }
