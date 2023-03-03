@@ -8,6 +8,8 @@ import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 
 import { ActivatedRoute } from '@angular/router';
 
+import { NavController, NavParams } from '@ionic/angular';
+
 
 @Component({
   selector: 'app-dashboard',
@@ -20,11 +22,21 @@ export class DashboardPage implements OnInit {
   public pessoaForm: FormGroup
   private arrayPessoa: Pessoa[] = []
   public dadosContatos : any
+  Total: Number
 
   constructor(public authService: AuthenticationService,
     private objContatos : DadosContatosService,
     private FormBuilder : FormBuilder,
-    private pessoaService : DadosContatosService) {
+    private pessoaService : DadosContatosService,
+    private route: ActivatedRoute
+    // public navCtrl: NavController, public navParams: NavParams
+    ) {
+
+      this.route.queryParams.subscribe(params => {
+        if (params.total) {
+          this.Total = params.total;
+        }
+      });
       this.dadosContatos = objContatos.enviarContatos()
     }
 
@@ -56,12 +68,4 @@ export class DashboardPage implements OnInit {
 
 // Calculo total da compra
 
-    Total: Number
-
-    calcularTotal(item:Pessoa) {
-      const valor1 = parseFloat(item.preco)
-      const valor2 = parseFloat(item.quantidade)
-   
-      this.Total = valor1 * valor2
-    }
   }

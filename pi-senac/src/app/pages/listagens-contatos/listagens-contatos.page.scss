@@ -175,17 +175,16 @@ ion-header{
     background-color: rgb(255, 255, 255);
 }
 .profileHome{
-    display: flex;
+    display: block;
     position: relative;
-    margin-left: 245px;
+    margin: auto;
 
-
-    top: 6px;
+    margin-right: 40px;
+    top: 10px;
     width: 55px;
     height: 55px;
 
     border-radius: 50%;
-
     background-color: #979393;
 
 }
@@ -210,8 +209,6 @@ ion-header{
     font-size: 10pt;
     height: 60px;
     width: 120px;
-
-    left: 30px;
     border-radius: 20px;
 
     box-shadow: 0px 3px 5px rgba(0,0,0,0.3);
@@ -226,7 +223,7 @@ ion-header{
     height: 60px;
     width: 120px;
 
-    left: 45px;
+    margin-left: 35px;
     border-radius: 20px;
 
     box-shadow: 0px 3px 5px rgba(0,0,0,0.3);
@@ -263,5 +260,8 @@ ion-header{
 }
 .botoes{
     display: flex;
+
+    text-align: center;
+    justify-content: center;
 
 }

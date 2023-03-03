@@ -13,9 +13,6 @@
       <h1 id="nome">{{arrayGoogle.displayName}}</h1>
   </div>
 
-
-
-
   <ion-content class="ion-padding">
   <!--Opções do menu  -->
 
@@ -54,11 +51,11 @@
     </ion-fab>
   </div>
 
-  <h1 id="nomePagina">Estoque</h1>
+  <h1 id="nomePagina" routerLink="/listagens-contatos/">Estoque</h1>
 
   <div class="botoes">
     <button id="bntEstoque">Estoque</button>
-    <button id="bntCarrinho">Carrinho</button>
+    <button id="bntCarrinho" routerLink="/carrinho/">Carrinho</button>
   </div>
   <button id="add" routerLink="/detalhes-contatos/add">+</button>
 

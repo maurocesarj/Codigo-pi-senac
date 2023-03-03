@@ -4,7 +4,9 @@ import { DadosContatosService } from 'src/app/services/dados-contatos.service';
 import { Pessoa } from 'src/app/models/pessoa.model'
 import { Guid } from 'guid-typescript';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+import { DashboardPage } from 'src/app/dashboard/dashboard.page';
 
+import { NavController } from '@ionic/angular';
 
 
 @Component({
@@ -24,7 +26,8 @@ export class CarrinhoPage implements OnInit {
   constructor(
     private objContatos : DadosContatosService,
     private FormBuilder : FormBuilder,
-    private pessoaService : DadosContatosService,) {
+    private pessoaService : DadosContatosService,
+    private navCtrl: NavController) {
     this.dadosContatos = objContatos.enviarContatos()
    }
 
@@ -86,8 +89,14 @@ export class CarrinhoPage implements OnInit {
       const valor2 = parseFloat(item.quantidade)
 
     this.Total = 0
-
     }
+
+    
   }
+
+  proxPage(){
+    this.navCtrl.navigateForward('/dashboard', { queryParams: { total: this.Total } });
+  }
+
 
   }
