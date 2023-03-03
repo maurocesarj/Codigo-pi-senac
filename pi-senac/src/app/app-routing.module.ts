@@ -8,8 +8,7 @@ const routes: Routes = [
   },
   {
     path: '',
-    // redirectTo: 'listagens-contatos',
-    redirectTo: 'login',
+    redirectTo: 'listagens-contatos',
     pathMatch: 'full'
   },
   {

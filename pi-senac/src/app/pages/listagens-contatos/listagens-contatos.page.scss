@@ -34,11 +34,12 @@ ion-toolbar{
 
 /*CONTEUDO OU CORPO*/
 ion-content{
-    --ion-background-color:#FFFFFF;
+    --ion-background-color:#ffffff;
     --ion-text-color: #070707;
     font-family: 'Inter', sans-serif;
     font-size: 15px;
 
+    width: auto;
     border: none;
 }
 /*HEADER*/
@@ -174,9 +175,9 @@ ion-header{
     background-color: rgb(255, 255, 255);
 }
 .profileHome{
-
+    display: flex;
     position: relative;
-    left: 230px;
+    margin-left: 245px;
 
 
     top: 6px;
@@ -245,10 +246,10 @@ ion-header{
     height: 25px;
     width: 25px;
 
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(250, 249, 249);
     position: relative;
-    bottom: 65px;
-    right: 75px;
+    bottom: 110px;
+    left: 160px;
 
     font-size: 15pt;
     color: #070707;
@@ -259,4 +260,8 @@ ion-header{
 
 #itema{
     border: none;
+}
+.botoes{
+    display: flex;
+
 }
